@@ -1,7 +1,9 @@
 body{
     
     height: 100%;
+    background: #111;
 }
+
 
 #principal{
     position: absolute;
@@ -21,6 +23,10 @@ body{
     
     
     
+}
+
+#menu-botoes  :hover {
+    cursor: pointer;
 }
 
 h1{

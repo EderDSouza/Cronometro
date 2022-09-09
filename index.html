@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Cronometro</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="script.js"></script>
+    
 
 </head>
 <body>
+    
     <div id="principal">
         <h1>Cronômetro</h1>
 
@@ -18,16 +19,17 @@
 
         <div id="menu-botoes">
             
-                <button id="botao_Iniciar" class="botoes1" type="button" name="bt-iniciar">Start</button>
+                <button id="botao_Start" class="botoes1" onclick="start()" nome="iniciar">Start</button>
 
-                <button id="botao_Stop" class="botoes2" type="button" name="pausar">Stop</button>
+                <button id="botao_Stop" class="botoes2" onclick="pausar()" name="pausar">Stop</button>
 
-                <button id="botao_Reset" class="botoes3" type="button" name="resetar">Reset</button>
+                <button id="botao_Reset" class="botoes3" onclick="reset()" name="resetar">Reset</button>
 
 
         </div>
 
     </div>
+    <script src="script.js"></script>
     
 </body>
 </html>
