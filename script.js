@@ -1,28 +1,60 @@
 
-var segundos = 00;
+var segundos = 0;
+var minutos = 0;
+var milesimo=0;
+var interval;
+
 
 
 function start(){
-    setInterval(contador,100)
+
+    interval = setInterval(contador,10);
+    
 
 };
 
 function pausar(){
-    console.log("iniciou")
+
+    clearInterval(interval);
 
 };
 
 function reset(){
-    console.log("iniciou")
+    clearInterval(interval);
+    milesimo="00";
+    segundos="00";
+    minutos="00";
+    document.getElementById("num_milesimo").innerText= milesimo
+    document.getElementById("num_segundos").innerText= segundos
+    document.getElementById("num_minutos").innerText= minutos
 
 };
 
 function contador(){
+    milesimo++;
+
+    if(milesimo == 60){
+        segundos++
+        milesimo=0;
+        document.getElementById("num_segundos").innerText= segundos
+
+        if(segundos == 60){
+            minutos++
+            segundos=0;
+            document.getElementById("num_minutos").innerText= minutos
+        };
+    };
+
+
+    document.getElementById("num_milesimo").innerText= milesimo
+
     
-    segundos ++
-    document.getElementById("num_segundos").innerText= segundos
     
-};
+}
+
+
+
+
 
 
 
