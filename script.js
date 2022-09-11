@@ -7,7 +7,7 @@ var interval;
 
 
 function start(){
-
+    clearInterval(interval);
     interval = setInterval(contador,10);
     
 
