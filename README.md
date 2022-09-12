@@ -1,5 +1,7 @@
 # Cronometro
 ###Aplicando javascript
+
+<img width="100px" src="https://github.com/EderDSouza/Cronometro/blob/master/html-css-js.png">
 <div>
   
   <p> Fiz um Projeto onde Aplico Html e Css e JavaScript. Projeto que parece simples mas
